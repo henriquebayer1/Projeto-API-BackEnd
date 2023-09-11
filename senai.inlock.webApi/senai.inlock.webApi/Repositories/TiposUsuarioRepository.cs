@@ -1,5 +1,6 @@
 ﻿using senai.inlock.webApi.Domains;
 using senai.inlock.webApi.Interfaces;
+using System.Data.SqlClient;
 
 namespace senai.inlock.webApi.Repositories
 {
@@ -10,12 +11,70 @@ namespace senai.inlock.webApi.Repositories
 
         public void Cadastrar(TiposUsuarioDomain tipoDeUsuario)
         {
-            throw new NotImplementedException();
+            string queryAdd = "INSERT INTO TiposUsuario(Titulo) VALUES(@Titulo)";
+
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+
+
+                using (SqlCommand cmd = new SqlCommand(queryAdd, con))
+
+                {
+
+                    cmd.Parameters.AddWithValue("@Titulo", tipoDeUsuario.Titulo);
+                   
+                    con.Open();
+
+                    cmd.ExecuteNonQuery();
+
+
+                }
+
+
+            }
         }
 
         public List<TiposUsuarioDomain> ListarTodos()
         {
-            throw new NotImplementedException();
+            List<TiposUsuarioDomain> TiposUsuarios = new List<TiposUsuarioDomain>();
+
+            SqlDataReader rdr;
+
+            string queryList = "SELECT IdTipoUsuario, Titulo FROM TiposUsuario";
+
+            using (SqlConnection con = new SqlConnection(StringConexao))
+            {
+
+
+                using (SqlCommand cmd = new SqlCommand(queryList, con))
+                {
+
+                    con.Open();
+
+                    rdr = cmd.ExecuteReader();
+
+                    while (rdr.Read())
+                    {
+
+                        TiposUsuarioDomain TipoUsuario = new TiposUsuarioDomain()
+                        {
+                            Titulo = rdr["Titulo"].ToString()
+                            
+                        };
+
+                        TiposUsuarios.Add(TipoUsuario);
+
+                    }
+
+                    return TiposUsuarios;
+
+                }
+
+
+
+
+
+            }
         }
     }
 }

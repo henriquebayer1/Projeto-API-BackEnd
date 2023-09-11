@@ -9,7 +9,7 @@ namespace senai.inlock.webApi.Interfaces
 
         void Cadastrar(UsuarioDomain Usuario);
 
-
+        UsuarioDomain Login(string email, string senha);
 
     }
 }

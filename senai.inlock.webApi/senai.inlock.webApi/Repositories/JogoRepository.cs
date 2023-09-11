@@ -44,7 +44,7 @@ namespace senai.inlock.webApi.Repositories
 
             SqlDataReader rdr;
 
-            string queryList = "SELECT IdJogo, Nome, Descricao, DataLancamento, Valor FROM Estudio";
+            string queryList = "SELECT IdJogo, Nome, Descricao, DataLancamento, Valor FROM Jogo";
 
             using (SqlConnection con = new SqlConnection(StringConexao))
             {

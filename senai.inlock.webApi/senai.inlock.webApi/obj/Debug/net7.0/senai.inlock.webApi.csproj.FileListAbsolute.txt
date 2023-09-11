@@ -38,3 +38,11 @@ C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\
 C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\senai.inlock.webApi.pdb
 C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\senai.inlock.webApi.genruntimeconfig.cache
 C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\obj\Debug\net7.0\ref\senai.inlock.webApi.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\45922978810\Desktop\ProjetoAPI\senai.inlock.webApi\senai.inlock.webApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
